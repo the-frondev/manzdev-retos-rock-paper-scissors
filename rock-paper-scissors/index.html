@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors | The Frontdev</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors <span>by the_frontdev</span></h1>
+    <div class="score">
+      <h2>SCORE</h2>
+      <div class="score-content">
+        <p>Player: <br> <span class="player-score">0</span></p>
+        <p>CPU: <br> <span class="cpu-score">0</span></p>
+      </div>
+    </div>
+    <div class="game">
+      <div class="player">🤜</div>
+      <div class="result"></div>
+      <div class="cpu">🤛</div>
+    </div>
+    <h3>CHOOSE DIFFICULTY</h3>
+    <div class="difficult">
+      <span>EASY</span>
+      <label for="difficulty">
+        <input type="checkbox" id="difficulty" >
+      </label>
+      <span>HARD</span>
+    </div>
+    <h3>CHOOSE YOUR WAEPON</h3>
+    <div class="weapons">
+      <button class="weapon" data-weapon="1">✊</button>
+      <button class="weapon" data-weapon="2">✋</button>
+      <button class="weapon" data-weapon="3">✌</button>
+      <button class="weapon hard hidden" data-weapon="4">🖖</button>
+      <button class="weapon hard hidden" data-weapon="5">🦎</button>
+    </div>
+  </div>
+  <dialog class="modal">
+    <h1>GAME OVER</h1>
+    <p class="winner"></p>
+    <button class="play-again">PLAY AGAIN</button>
+  </dialog>
+</body>
+</html>
