@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 body {
   background-color: #222;
   margin: 0;
   color: #fafafa;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   max-width: 500px;
   padding: 1.5rem 1rem;
@@ -13,6 +19,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #0e0e0e;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem #0e0e0ecc;
 
   & h1 {
     text-align: center;
@@ -40,6 +49,7 @@ body {
     & .score-content {
       display: flex;
       justify-content: space-around;
+      box-sizing: border-box;
       & p {
         font-size: 1.25rem;
         & span {
@@ -132,5 +142,24 @@ body {
   }
   25%, 75% {
     transform: rotate(-45deg);
+  }
+}
+
+.modal {
+  border-radius: 1rem;
+  text-align: center;
+  background: #fafafa80;
+  border: 0.125rem solid #0098DA;
+  backdrop-filter: blur(0.25rem);
+  & .winner {
+    font-size: 1.5rem;
+    color: #0098CC;
+  }
+  & .play-again {
+    background: #0098CC;
+    color: #fafafa;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0.25rem 0.25rem 0.5rem #0e0e0ecc;
   }
 }
