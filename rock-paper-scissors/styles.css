@@ -3,6 +3,9 @@
 body {
   background-color: #222;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: max-content;
   color: #fafafa;
   display: grid;
   place-content: center;
